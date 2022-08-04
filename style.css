@@ -48,23 +48,23 @@ li {
 .menu-item {
 }
 .menu-link::after {
-  content: "";
-  position: absolute;
   bottom: -5px;
-  left: 0;
+  content: "";
+  display: block;
   width: 0;
   height: 2px;
-  opacity: 0;
+  left: 50%;
+  position: absolute;
   background-color: #54bab9;
-  transition: all 0.4s linear;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 .menu-link {
   position: relative;
   font-size: 24px;
 }
 .menu-link:hover.menu-link::after {
-  opacity: 1;
-  width: 80%;
+  width: 100%;
+  left: 0;
 }
 .logo {
   width: 100px;
